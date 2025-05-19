@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terrassement Bodin - Votre terrain, notre savoir-faire</title>
+  <meta name="description" content="Entreprise de terrassement à Bordeaux. Terrassement Bodin réalise vos travaux de nivellement et VRD avec réactivité et garantie décennale.">
+  <style>
+    /* Base */
+    :root {
+      --ocre: #d6a365;
+      --gris: #5e5e5e;
+      --gris-clair: #f2f2f2;
+      --blanc: #fff;
+      font-size: 16px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--gris);
+      background: var(--blanc);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      color: var(--ocre);
+      text-decoration: none;
+    }
+    h1, h2, h3 {
+      color: var(--gris);
+      margin-top: 0;
+    }
+    /* Layout */
+    header, section, footer {
+      padding: 1rem;
+    }
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(0.7);
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: var(--blanc);
+      padding: 0 1rem;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+    .hero-text h2 {
+      font-size: 1.25rem;
+      font-weight: normal;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--ocre);
+      color: var(--blanc);
+      border-radius: 4px;
+    }
+    /* Services */
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .service-card {
+      background: var(--gris-clair);
+      padding: 1rem;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .service-card i {
+      font-size: 2rem;
+      color: var(--ocre);
+    }
+    /* Avantages */
+    .advantages ul {
+      list-style: none;
+      padding: 0;
+    }
+    .advantages li::before {
+      content: '\2714\FE0F';
+      color: var(--ocre);
+      margin-right: 0.5rem;
+    }
+    /* Témoignages */
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    blockquote {
+      margin: 0;
+      padding: 1rem;
+      background: var(--gris-clair);
+      border-left: 5px solid var(--ocre);
+    }
+    /* Carte */
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+    /* Contact */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-width: 400px;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    button {
+      padding: 0.75rem;
+      background: var(--ocre);
+      color: var(--blanc);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    /* Footer */
+    footer {
+      background: var(--gris-clair);
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .services {
+        flex-direction: row;
+      }
+      .testimonials {
+        flex-direction: row;
+      }
+      .hero-text h1 {
+        font-size: 3rem;
+      }
+      .hero-text h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1Mu+YF66zD1wKBiSLD1ft18FWC1kuIz6Ug3GaOthm2VX+oFqV3qfJq7uaQpOoqk8tH00NT1J+klXUeWv/2V5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Terrassement Bodin",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bordeaux",
+      "addressCountry": "FR"
+    },
+    "telephone": "+33556000000",
+    "url": "https://example.com"
+  }
+  </script>
+</head>
+<body>
+  <!-- Hero -->
+  <header class="hero" role="banner">
+    <img src="https://via.placeholder.com/1440x600?text=Chantier" alt="Chantier de terrassement" loading="lazy" width="1440" height="600">
+    <div class="hero-text">
+      <h1>Votre terrain, notre savoir-faire</h1>
+      <h2>Terrassement professionnel à Bordeaux</h2>
+      <a href="#contact" class="cta" role="button">Demander un devis</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services" aria-labelledby="services-title">
+    <h2 id="services-title">Nos services</h2>
+    <article class="service-card">
+      <i class="fas fa-digger" aria-hidden="true"></i>
+      <h3>Terrassement global</h3>
+      <p>De la préparation à la finition, nous assurons l'ensemble de vos travaux de terrassement en garantissant une base solide pour vos projets.</p>
+    </article>
+    <article class="service-card">
+      <i class="fas fa-level-up-alt" aria-hidden="true"></i>
+      <h3>Nivellement</h3>
+      <p>Nous nivelons vos terrains avec précision afin d'assurer l'écoulement des eaux et la stabilité de vos constructions.</p>
+    </article>
+    <article class="service-card">
+      <i class="fas fa-road" aria-hidden="true"></i>
+      <h3>VRD</h3>
+      <p>Nos équipes réalisent les voiries et réseaux divers en respectant les normes en vigueur pour votre tranquillité.</p>
+    </article>
+  </section>
+
+  <!-- Avantages -->
+  <section class="advantages" aria-labelledby="advantages-title">
+    <h2 id="advantages-title">Pourquoi nous choisir ?</h2>
+    <ul>
+      <li>Réactivité</li>
+      <li>Parc matériel récent</li>
+      <li>Garantie décennale</li>
+    </ul>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="testimonials" aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title">Témoignages</h2>
+    <figure>
+      <blockquote>Travail impeccable et équipe très professionnelle.</blockquote>
+      <figcaption>&mdash; Marie B.</figcaption>
+    </figure>
+    <figure>
+      <blockquote>Respect des délais et communication au top.</blockquote>
+      <figcaption>&mdash; Julien D.</figcaption>
+    </figure>
+    <figure>
+      <blockquote>Je recommande Terrassement Bodin pour leur sérieux.</blockquote>
+      <figcaption>&mdash; Claire L.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Zone d'intervention -->
+  <section class="map" aria-labelledby="map-title">
+    <h2 id="map-title">Zone d'intervention</h2>
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.685%2C44.80%2C-0.4%2C44.95&amp;layer=mapnik" aria-label="Carte OpenStreetMap centrée sur Bordeaux" loading="lazy"></iframe>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contactez-nous</h2>
+    <form aria-label="formulaire de contact" action="#" method="post">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required aria-required="true">
+
+      <label for="tel">Téléphone</label>
+      <input type="tel" id="tel" name="tel" required aria-required="true" pattern="[0-9]{10}" title="Veuillez entrer 10 chiffres">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required aria-required="true">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" maxlength="500" required aria-required="true"></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>Ou appelez-nous au <a href="tel:+33556000000"><i class="fas fa-phone" aria-hidden="true"></i> 05 56 00 00 00</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Terrassement Bodin - <a href="#">Mentions légales</a></p>
+  </footer>
+
+  <script>
+    // Fallback pour scroll fluide sur navigateurs anciens
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Validation de formulaire et toast
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (form.checkValidity()) {
+        const toast = document.createElement('div');
+        toast.textContent = 'Merci, nous vous recontacterons sous 24 h !';
+        toast.setAttribute('role', 'status');
+        toast.setAttribute('aria-live', 'polite');
+        toast.style.position = 'fixed';
+        toast.style.bottom = '1rem';
+        toast.style.right = '1rem';
+        toast.style.background = '#333';
+        toast.style.color = '#fff';
+        toast.style.padding = '0.75rem 1rem';
+        toast.style.borderRadius = '4px';
+        toast.style.zIndex = '1000';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+        form.reset();
+      } else {
+        form.reportValidity();
+      }
+    });
+
+    // Année dynamique dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
